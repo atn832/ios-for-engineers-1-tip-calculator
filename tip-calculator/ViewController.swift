@@ -56,9 +56,9 @@ class ViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         // reload tip segment
-        println("reload tip segment")
         var defaults = NSUserDefaults.standardUserDefaults()
         tipSegment.selectedSegmentIndex = defaults.integerForKey("tipIndex");
+        updateValues()
     }
 }
 
